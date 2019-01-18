@@ -1,0 +1,26 @@
+Directorio local de git: cd Ciclo
+git clone https://github.com/IESJacaranda/deshaciendo-cambios-y-gestion-de-ramas-Abrahamrc94.git
+nano scene-5.txt
+añadinmos las lineas, guardamos y hacemos un commit 
+git add scene-5.txt
+git commit -m "añadiendo lineas"
+volvemos a editar el archivo 
+nano scene-5.txt y añadimos las lineas 
+My hour is almost come,
+When I to sulphurous and tormenting balloons
+Must render up myself.
+devolvemos el fichero al commit anterior: git reset --soft
+nano scene-3.txt y pulsamos control+w y a continuacion control+r y realizamos los cambios, igual para el archivo scene-7.txt
+git add scene-3.txt scene-7.txt
+abrimos el archivo scene-2.txt y borramos todas las lineas
+y lo añadimos git add scene-2.txt
+comprobamos el estado git status
+git reset scene-2.txt
+git commit -m "cambiando nombre"
+git reset --hard
+git branch reinventando_hamlet
+git checkout reinventando_hamlet
+nano scene-2.txt
+git add scene-2.txt
+git commit -m "Mejorando escena 2"
+git checkout master
